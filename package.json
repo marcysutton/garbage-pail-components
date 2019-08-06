@@ -1,0 +1,56 @@
+{
+  "name": "garbage-pail-components",
+  "description": "Garbage Pail Components",
+  "version": "1.0.0",
+  "author": "Marcy Sutton <a11y@marcysutton.com>",
+  "dependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@emotion/core": "^10.0.14",
+    "@emotion/styled": "^10.0.14",
+    "autoprefixer": "^9.6.1",
+    "emotion": "^10.0.14",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "gatsby": "^2.13.25",
+    "gatsby-image": "^2.2.6",
+    "gatsby-plugin-manifest": "^2.2.1",
+    "gatsby-plugin-mdx": "^1.0.7",
+    "gatsby-plugin-offline": "^2.2.1",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sass": "^2.1.3",
+    "gatsby-plugin-sharp": "^2.2.7",
+    "gatsby-remark-prismjs": "^3.3.3",
+    "gatsby-source-filesystem": "^2.1.5",
+    "gatsby-theme-mdx-deck": "^3.0.8",
+    "gatsby-transformer-sharp": "^2.2.3",
+    "match-sorter": "^4.0.1",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-debounce-input": "^3.2.0",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0",
+    "sass-loader": "^7.1.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "develop": "gatsby develop",
+    "deploy": "gatsby clean && gatsby build --prefix-paths && gh-pages -d public",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": ""
+  },
+  "devDependencies": {
+    "babel-preset-gatsby": "^0.2.7",
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcysutton/garbage-pail-components"
+  }
+}
