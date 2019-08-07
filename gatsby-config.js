@@ -2,12 +2,12 @@ const path = require('path')
 
 module.exports = {
   siteMetadata: {
-    title: `Accessibility in JavaScript Applications`,
+    title: `Garbage Pail Components`,
     description:
-      `Learn the necessary techniques and tools for building inclusive web applications with JavaScript.`,
+      `Let's turn up the "bad accessibility" dial up to 11 in order to feel the pain that users with disabilities experience on a regular basis.`,
     author: `@marcysutton`,
   },
-  pathPrefix: "/js-a11y-workshop",
+  pathPrefix: "/garbage-pail-components",
   plugins: [
     {
       resolve: `gatsby-theme-mdx-deck`,
@@ -16,7 +16,7 @@ module.exports = {
         mdx: true,
         // source directory for decks
         contentPath: `src/slides`,
-        basePath: '/slides',
+        basePath: '/',
       },
     },
     `gatsby-plugin-sass`,
@@ -40,13 +40,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `js-a11y-workshop`,
-        short_name: `jsa11y`,
+        name: `garbage-pail-components`,
+        short_name: `hotgarbage`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/blueicon.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/dumpster-fire-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

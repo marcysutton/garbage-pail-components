@@ -2,6 +2,8 @@
 
 Oh, the horror! Hot garbage has taken over the web. Carousel Carol, Type-Ahead Tommy, Shallow Dom, Wastin' JSON, Trappin' Tam...the gang's all here. We'll turn the "bad accessibility" dial up to 11 in order to feel the pain that users with disabilities experience on a regular basis. Some of the patterns in this talk will be directly inspired from real life instances–because we can't even make this stuff up. By facing our miserable fears and burning everything to the ground, we'll be reborn and better equipped to create truly successful user interfaces.
 
+Workshop slides: https://marcysutton.github.io/garbage-pail-components/
+
 Presenting at:
 
 - Clarity Conf
@@ -15,12 +17,6 @@ This came out of a happy hour discussion with Jesse Beach, Diane Ko, EJ Mason an
 Note: This repo has intentional usability and accessibility problems. Do not mimic!re at some point... ;)
 
 Prior art: https://github.com/feross/TheAnnoyingSite.com
-
----
-
-App URL: https://marcysutton.github.io/garbage-pail-components
-
-Workshop slides: https://marcysutton.github.io/garbage-pail-components/slides/
 
 ---
 
@@ -43,11 +39,3 @@ npm start
 ```
 
     View in a browser: http://localhost:8000
-
-3. Edit files:
-
-    - Site pages: [`src/pages/*`](https://github.com/marcysutton/garbage-pail-components/blob/master/src/pages)
-    - Site components: [`src/components/*`](https://github.com/marcysutton/garbage-pail-components/blob/master/src/components)
-    - Templates: [`src/templates/*`](https://github.com/marcysutton/garbage-pail-components/blob/master/src/templates)
-    - Slide content: [`src/slides/index.mdx`](https://github.com/marcysutton/garbage-pail-components/blob/master/src/slides/index.mdx)
-

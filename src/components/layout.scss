@@ -1,3 +1,12 @@
+@import url("//hello.myfonts.net/count/39c083");
+@import url("https://use.typekit.net/vzu6tar.css");
+
+@font-face {
+  font-family: 'WindsorD-Bol';
+  src: url('../fonts/windsor.eot'); 
+  src: url('../fonts/windsor.eot?#iefix') format('embedded-opentype'), url('../fonts/windsor.woff2') format('woff2'), url('../fonts/windsor.woff') format('woff'), url('../fonts/windsor.ttf') format('truetype');
+}
+
 * {
   box-sizing: inherit;
 }
@@ -21,77 +30,16 @@ body {
 a, a:link, a:visited {
   color: #333;
 }
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
-}
-.js-focus-visible :focus-visible {
-  outline: 5px auto lightblue;
-  outline: 5px auto -webkit-focus-ring-color;
-}
 p > code {
   background-color: #f6f7b4;
   font-weight: bold;
   padding: 1px 3px;
 }
-.js-workshop-app {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas: "header header"
-                        "nav  main";
-  height: 100vh;
-  width: 100vw;
-
-  main {
-    background-color: #fff;
-    grid-area: main;
-  }
-  nav {
-    background-color: #ececec;
-    grid-area: nav;
-  }
-  header.globalHeader {
-    grid-area: header;
-  }
-  p, ul {
-    margin-bottom: 1em;
-    line-height: 1.5;
-  }
-}
-@media screen and (max-width: 600px) {
-  .js-workshop-app {
-    display: block;
-  }
-}
-header.globalHeader {
-  background-color: rebeccapurple;
-  color: white;
-  padding: 1em;
-
-  .headerIcon {
-    display: inline-block;
-    height: 1em;
-    width: 1em;
-  }
-  a, a:link, a:visited {
-    color: currentColor;
-    text-decoration: none;
-  }
-
-  svg path {
-    fill: currentColor;
-  }
+h1 strong {
+  text-decoration: underline;
 }
 main.app > div {
   padding: 1.5em;
-}
-.heading {
-  font-weight: bold;
-
-  &.level-3 {
-    font-size: 1.35rem;
-    margin-bottom: 1em;
-  }
 }
 section.two-col {
   display: grid;

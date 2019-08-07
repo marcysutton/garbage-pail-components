@@ -27,6 +27,29 @@ const Provider = props => {
 }
 
 export default {
+  fonts: {
+    body: 'filson-pro, sans-serif',
+  },
+  text: {
+    heading: {
+      fontFamily: 'WindsorD-Bol',
+      margin: '0 auto 0.5rem',
+      textAlign: 'center'
+    },
+  },
+  colors: {
+    text: 'maroon',
+    background: 'lightyellow',
+    link: '#000',
+    heading: '#000',
+    quote: '#000',
+    pre: '#333',
+    preBackground: 'rgb(245, 242, 240)',
+    code: '#333',
+    codeBackground: 'transparent',
+    figcaptionBackground: "rebeccapurple",
+    figcaption: "#fff"
+  },
   styles: {
     body: {
     },
@@ -34,12 +57,12 @@ export default {
       textAlign: 'center'
     },
     p: {
-      fontSize: '2.25rem',
+      fontSize: '3rem',
       margin: "1rem 0",
       textAlign: 'center'
     },
     h1: {
-      fontSize: '4.5rem',
+      fontSize: '5rem',
       marginBottom: "0.25rem"
     },
     h2: {
@@ -59,26 +82,11 @@ export default {
       marginBottom: "0.5rem",
       textAlign: 'left'
     },
-  },
-  text: {
-    heading: {
-      margin: '0 auto 0.5rem',
-      textAlign: 'center'
+    img: {
+      display: 'block',
+      objectFit: 'contain',
+      maxHeight: '100vh'
     },
-  },
-  colors: {
-    headerFooterBackground: '#fff',
-    text: '#000',
-    background: '#fff',
-    link: '#000',
-    heading: '#000',
-    quote: '#000',
-    pre: '#333',
-    preBackground: 'rgb(245, 242, 240)',
-    code: '#333',
-    codeBackground: 'transparent',
-    figcaptionBackground: "rebeccapurple",
-    figcaption: "#fff"
   },
   Provider
 }
