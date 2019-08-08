@@ -32,13 +32,14 @@ export default {
   },
   text: {
     heading: {
+      color: 'maroon',
       fontFamily: 'WindsorD-Bol',
       margin: '0 auto 0.5rem',
       textAlign: 'center'
     },
   },
   colors: {
-    text: 'maroon',
+    text: '#000',
     background: 'lightyellow',
     link: '#000',
     heading: '#000',
@@ -83,7 +84,7 @@ export default {
       textAlign: 'left'
     },
     img: {
-      display: 'block',
+      display: 'inline-block',
       objectFit: 'contain',
       maxHeight: '100vh'
     },

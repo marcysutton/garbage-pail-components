@@ -108,29 +108,37 @@ textarea {
   height: 200px;
   width: 320px;
 }
-.updateUI {
-  max-width: 320px;
+.a11yDiagram {
+  width: 100%;
 
-  .toast {
-    background-color: lightyellow;
+  & > div {
+    align-items: baseline;
     display: flex;
-    opacity: 0;
-    padding: 0.5em;
-    pointer-events: none;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    width: 100%;
 
-    &.updating {
-      opacity: 1;
-      pointer-events: all;
-    }
+    figure {
+      margin: 0;
 
-    .dismiss {
-      background-color: transparent;
-      border: none;
-      display: inline-block;
-      font-size: 1rem;
-      font-weight: bold;
-      margin-left: auto;
+      svg {
+        max-height: 200px;
+        max-width: 200px;
+        width: 100%;
+      }
+      figcaption {
+        margin: 0 1em;
+      }
     }
+  }
+  p {
+    bottom: -8em;
+    font-size: 0.5em;
+    
+    margin-top: 2em;
+    position: absolute;
+    width: 100%;
   }
 }
 .skip-link {
