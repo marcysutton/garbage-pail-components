@@ -1,0 +1,144 @@
+.demo1 {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.65em;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  min-width: 1000px;
+  text-align: left;
+
+  .header {
+    background-color: black;
+    align-items: center;
+    color: white;
+    display: flex;
+    height: auto;
+    padding: 0.25em 0.5em;
+    position: relative;
+    width: 100%;
+
+    .inner-container {
+      align-items: center;
+      box-sizing: border-box;
+      color: #fff;
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+      padding: 0;
+      padding-top: 23px;
+      position: relative;
+      width: 100%;
+    }
+
+    h2 {
+      color: inherit;
+      font-family: Helvetica, sans-serif;
+      font-size: 1em;
+    }
+    .header-controls {
+      margin-left: auto;
+    }
+  }
+  .nav {
+    padding-left: 1rem;
+  }
+  .main {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
+  }
+  .heading {
+    font-size: 0.75em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+  }
+  .listitem, .app-iconbutton {
+    color: #626262;
+    font-size: 0.6em;
+    margin: 0 0 0.5em;
+    padding: 6px 0;
+  }
+  .listitem {
+    display: flex;
+    align-items: center;
+
+    &.directory:before {
+      background-image: url("./icons/directory.svg");
+      content: '';
+    }
+    &.profile:before {
+      background-image: url("./icons/profile.svg");
+      content: '';
+    }
+    &.settings:before {
+      background-image: url("./icons/settings.svg");
+      content: '';
+    }
+    &.refer:before {
+      background-image: url("./icons/refer-a-friend.svg");
+      content: '';
+    }
+    &.support:before {
+      background-image: url("./icons/help.svg");
+      content: '';
+    }
+  }
+  .listitem:before {
+    border-radius: 0.5em;
+    content: '';
+    height: 24px;
+    width: 24px;
+    margin-right: 15px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .listitem:hover {
+    color: #01C8E5;
+  }
+  .app-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .app-iconbutton {
+    box-sizing: border-box;
+    border: solid 1px transparent;
+    cursor: pointer;
+    margin-bottom: 8px;
+    overflow: visible;
+    padding: 9px;
+    position: relative;
+    text-align: center;
+    transition: all 0.4s;
+  }
+  .app-iconbutton:hover {
+    box-shadow: none;
+    border: solid 1px transparent;
+  }
+  .app-icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #EFEEEF;
+    border-radius: 22px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    transition: all .1s ease-in;
+    width: 100px;
+  }
+  .app-iconbutton:hover .app-icon {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.4);
+  }
+  .title {
+    margin-top: 15px;
+    width: 130px;
+    text-align: center;
+  }
+}

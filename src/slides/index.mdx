@@ -4,6 +4,9 @@ import Slide from "../templates/slide"
 import ImageSlide from "../templates/image-slide"
 import CodeBlock from "../components/code-figure"
 import A11yDiagram from "../components/a11y"
+import KeyboardTrapDemo from "../components/demo1"
+import CarouselDemo from "../components/demo2"
+import SearchContainer from "../components/custom-input"
 
 import baseTheme from '../theme'
 export const themes = [baseTheme, highlight]
@@ -178,7 +181,47 @@ people with disabilities<br />encounter on a regular basis
 
 <h1 class="visually-hidden">Trapping Tam</h1>
 
-![](./trapping-tam.jpg)
+![A kid stuck in glue with objects](./trapping-tam.jpg)
+
+</Slide>
+
+---
+
+<Slide>
+
+## Demo
+
+<SearchContainer />
+
+</Slide>
+
+---
+
+<Slide>
+
+<KeyboardTrapDemo />
+
+</Slide>
+
+---
+
+<Slide>
+
+<h1 class="visually-hidden">Carousel Cameron</h1>
+
+![A plump kid riding an impaled carousel horse](./carousel-cameron.jpg)
+
+</Slide>
+
+---
+
+<Slide>
+
+<div style="height: 100vh; width: 95vw; overflow: scroll; position: relative;">
+
+<CarouselDemo />
+
+</div>
 
 </Slide>
 
@@ -241,7 +284,9 @@ people with disabilities<br />encounter on a regular basis
 - [Fable](https://makeitfable.com)
 - [Access Works](https://access-works.com) (Knowbility)
 
-Oct. 10: [Inclusve Design 24](https://inclusivedesign24.org/2019/)
+<div style="margin-top: 2em; font-style: italic;">
+  <small>October 10: <a href="https://inclusivedesign24.org/2019/">Inclusve Design 24</a></small>
+</div>
 
 </Slide>
 
