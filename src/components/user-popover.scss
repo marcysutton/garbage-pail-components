@@ -1,28 +1,62 @@
-.nav-container .inner-container .user-wrapper {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+
+.popup-wrapper {
+  display: inline-block;
+  font-family: Helvetica, sans-serif;
+
+  .info {
+    line-height: 40px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-right: 20px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0; }
-    .nav-container .inner-container .user-wrapper__link {
-      color: #FFF !important; }
-    .nav-container .inner-container .user-wrapper .popup-wrapper {
-      display: inline-block; }
-      .nav-container .inner-container .user-wrapper .popup-wrapper .info {
-        line-height: 40px;
-        -webkit-transition: all .2s;
-        transition: all .2s;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start; }
-        .nav-container .inner-container .user-wrapper .popup-wrapper .info:hover {
-          opacity: .9; }
-        .nav-container .inner-container .user-wrapper .popup-wrapper .info .user-avatar-wrapper {
-          display: inline-block; }
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    
+    &:hover {
+      opacity: .9;
+    }
+    .user-avatar-wrapper {
+      display: inline-block;
+    }
+  }
+  .userPopover-dropdown {
+    border-radius: 0;
+    color: #fff;
+    display: inline;
+    font-size: 0.5em;
+    transform: none;
+
+    .dropdownPopListRow.link .nav-container__searchOption {
+      padding: 0;
+    }
+
+    .select-dropdownpopup-outer {
+      height: 0;
+      margin-top: 0;
+      overflow: hidden;
+      width: 300px;
+    }
+    .select-dropdownpopup {
+      background-color: #000;
+    }
+
+    .category {
+      border-top: none !important;
+      cursor: auto;
+      font-size: 1em;
+      font-weight: bold;
+      pointer-events: none;
+    }
+    .label {
+      font-size: 0.95em;
+      margin: 0;
+      padding: 12px 30px;
+    }
+    .showing {
+      border-radius: 0;
+      height: 500px;
+    }
+  }
+}

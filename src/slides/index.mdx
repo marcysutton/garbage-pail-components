@@ -4,9 +4,10 @@ import Slide from "../templates/slide"
 import ImageSlide from "../templates/image-slide"
 import CodeBlock from "../components/code-figure"
 import A11yDiagram from "../components/a11y"
+import SearchContainer from "../components/search-input"
+import UserPopover from "../components/user-popover"
 import KeyboardTrapDemo from "../components/demo1"
 import CarouselDemo from "../components/demo2"
-import SearchContainer from "../components/custom-input"
 
 import baseTheme from '../theme'
 export const themes = [baseTheme, highlight]
@@ -179,9 +180,13 @@ people with disabilities<br />encounter on a regular basis
 
 <Slide>
 
-<h1 class="visually-hidden">Trapping Tam</h1>
+<h2 class="visually-hidden">Demo</h2>
 
-![A kid stuck in glue with objects](./trapping-tam.jpg)
+<div class="search-demo" style="font-size: 0.65em;">
+  
+  <SearchContainer />
+
+</div>
 
 </Slide>
 
@@ -189,13 +194,23 @@ people with disabilities<br />encounter on a regular basis
 
 <Slide>
 
-## Demo
+<h2 class="visually-hidden">Demo 2</h2>
 
-<div class="search-demo" style="font-size: 0.65em;">
+<div class="search-demo" style="font-size: 1em;">
   
-  <SearchContainer />
+  <UserPopover />
 
 </div>
+
+</Slide>
+
+---
+
+<Slide>
+
+<h1 class="visually-hidden">Trapping Tam</h1>
+
+![A kid stuck in glue with objects](./trapping-tam.jpg)
 
 </Slide>
 

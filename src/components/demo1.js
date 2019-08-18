@@ -1,8 +1,6 @@
 import React from "react"
-import SearchContainer from "./custom-input"
+import SearchContainer from "./search-input"
 import UserPopover from "./user-popover"
-
-import userImg from '../images/rainier-headshot.jpg'
 
 import activityIcon from "./icons/pto.png"
 import certIcon from "./icons/payroll.png"
@@ -19,8 +17,8 @@ const Demo1 = () => (
                 <h2>Dogtraining</h2>
                 <div className="header-controls">
                     <SearchContainer />
+                    <UserPopover />
                 </div>
-                <UserPopover userImg={userImg} />
             </div>
         </div>
         <div className="main">

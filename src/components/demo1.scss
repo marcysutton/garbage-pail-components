@@ -4,7 +4,7 @@
   font-family: Helvetica, sans-serif;
   font-size: 0.65em;
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 3fr;
   min-width: 1000px;
   text-align: left;
 
@@ -26,7 +26,7 @@
       margin: 0 auto;
       justify-content: space-between;
       padding: 0;
-      padding-top: 23px;
+      padding-top: 0.5em;
       position: relative;
       width: 100%;
     }
@@ -37,10 +37,16 @@
       font-size: 1em;
     }
     .header-controls {
+      align-items: center;
+      display: flex;
       margin-left: auto;
     }
     .nav-container__searchContainer {
       margin-right: 1em;
+    }
+    .userPopover-dropdown .select-dropdownpopup-outer {
+      padding-top: 2em;
+      right: 0;
     }
   }
   .nav {

@@ -7,6 +7,20 @@
     .nav-container__search {
         min-width: 250px;
     }
+    li.active .nav-container__searchOption {
+        background-color: #EEE;
+    }
+    .select-dropdownpopup {
+        background-color: #fff;
+        border-radius: 1em;
+        border-color: transparent;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        ul {
+            color: #222;
+        }
+    }
 }
 .search-top-container {
     box-sizing: border-box;
@@ -14,7 +28,6 @@
     margin-top: 10px;
 
     .search-container {
-
         &.has-value .search-box .s-w-placeholder {
             display: none;
         }
@@ -123,67 +136,6 @@
 
         .search-container .search-box .title {
             display: none;
-        }
-    }
-}
-.select-dropdownpopup-outer {
-    box-sizing: border-box;
-    border-radius: 1em;
-    position: absolute;
-    margin-left: 0px;
-    margin-top: 50px;
-    top: 0px;
-    width: calc(100%);
-    z-index: 1001;
-
-    .select-dropdownpopup {
-        background-color: #FFF;
-        box-shadow: 1px 2px 5px 0 #ABABAB;
-        border: none;
-        border-color: transparent;
-        border-radius: 18px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        box-shadow: none;
-        overflow: hidden;
-        padding: 0;
-
-        ul {
-            color: #222;
-            list-style: none;
-            margin: 0;
-            outline: none;
-            padding: 0;
-
-            li {
-                cursor: pointer;
-
-                &.active .nav-container__searchOption, {
-                    background-color: #EEE;
-                }
-                &:hover:not(.active) .nav-container__searchOption {
-                    color: #01C8E5;
-                }
-                .nav-container__searchOption {
-                    align-items: center;
-                    display: flex;
-                    font-size: 1em;
-                    line-height: 28px;
-                    padding: 8px 18px;
-                }
-            }
-        }
-    }
-    &.virtualise {
-        visibility: hidden;
-    }
-
-    &.showing {
-        visibility: visible;
-
-        .select-dropdownpopup {
-            border: 1px solid #ccc;
-            border-top-color: transparent;
         }
     }
 }
