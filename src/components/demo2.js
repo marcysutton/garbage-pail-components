@@ -4,22 +4,19 @@ import { StaticQuery, graphql } from "gatsby"
 import Carousel from "../components/carousel"
 
 const imageData = [
-    'Backpacking with Rainier the labradoodle',
-    'Camping with the dog at a wilderness lake',
-    'Carrying puppy Rainier on a mountain hike',
-    'Mt. Baker Wilderness at Chain Lakes',
-    'Skyline Lake reflection',
-    'Bagley the cat wants to go van camping',
-    'Sunny trail magic in the North Cascades',
-    'Snowy Iceberg the Adventure Van',
-    'Rainier in his snow suit in the Baker backcountry',
-    'My splitboard in the snow',
+    'A large black bear inspecting a dumpster',
+    'A dump truck full of cut wood',
+    'A dumpster overflowing with garbage, photoshopped into a field with flowers',
+    'A person with gum stuck to their boot',
+    'Reusable water bottles',
 ]
 
 const Demo2 = () => (
     <StaticQuery query={graphql`
         query {
-            gallery: allFile(filter: { sourceInstanceName: { eq: "gallery" } }) {
+            gallery: allFile(
+                filter: { sourceInstanceName: { eq: "gallery" }
+            }) {
                 edges {
                     node {
                         name
