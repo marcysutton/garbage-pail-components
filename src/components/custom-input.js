@@ -24,6 +24,12 @@ const CustomInput = ({ text = 'Search for a dog friend' }) => {
             setIsDirty(false)
         }
     }
+    const keyHandler = (event) => {
+        console.log("You'd be a lot cooler if you supported the Tab key");
+        if (event.key === 'Tab') {
+            event.preventDefault()
+        }
+    }
     return (
         <div className={`nav-container__searchContainer nav-container__searchContainer--isExpanded`}>
             <div className="nav-container__search">
@@ -33,7 +39,7 @@ const CustomInput = ({ text = 'Search for a dog friend' }) => {
                             <div className="icon"></div>
                             <div className="search-wrap">
                                 <span className="s-w-placeholder">{text}</span>
-                                <input name="empName" type="text" className="truncate search" autoComplete="off" onFocus={focusHandler} onBlur={blurHandler} onChange={changeHandler} />
+                                <input name="empName" type="text" className="truncate search" autoComplete="off" onFocus={focusHandler} onBlur={blurHandler} onKeyDown={keyHandler} onChange={changeHandler} />
                             </div>
                             <div className={`title ${focused ? 'active': ''}${dirty ? ' show' : ''}`}>
                                 <span>Search for a friend</span>
@@ -70,22 +76,22 @@ const CustomInput = ({ text = 'Search for a dog friend' }) => {
                                     </div>
                                     <div data-index="3" data-known-size="44">
                                         <li className="dropdownPopListRow" id="option-4">
-                                            <div class="nav-container__searchOption">
-                                                <div class="nav-container__searchUserName">Miss Mabel</div>
+                                            <div className="nav-container__searchOption">
+                                                <div className="nav-container__searchUserName">Miss Mabel</div>
                                             </div>
                                         </li>
                                     </div>
                                     <div data-index="4" data-known-size="44">
-                                        <li class="dropdownPopListRow" id="option-5">
-                                            <div class="nav-container__searchOption">
-                                                <div class="nav-container__searchUserName">Mochi</div>
+                                        <li className="dropdownPopListRow" id="option-5">
+                                            <div className="nav-container__searchOption">
+                                                <div className="nav-container__searchUserName">Mochi</div>
                                             </div>
                                         </li>
                                     </div>
                                     <div data-index="5" data-known-size="44">
-                                        <li class="dropdownPopListRow" id="option-6">
-                                            <div class="nav-container__searchOption">
-                                                <div class="nav-container__searchUserName">Moonli</div>
+                                        <li className="dropdownPopListRow" id="option-6">
+                                            <div className="nav-container__searchOption">
+                                                <div className="nav-container__searchUserName">Moonli</div>
                                             </div>
                                         </li>
                                     </div>

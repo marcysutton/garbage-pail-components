@@ -2,19 +2,18 @@
     background-color: #000;
     border-radius: 1em;
     font-size: 0.5em;
+    position: relative;
 
     .nav-container__search {
         min-width: 250px;
     }
 }
 .search-top-container {
+    box-sizing: border-box;
     padding-top: 15px;
     margin-top: 10px;
 
     .search-container {
-        box-sizing: border-box;
-        padding: 10px;
-        width: 100%;
 
         &.has-value .search-box .s-w-placeholder {
             display: none;
@@ -23,7 +22,7 @@
             background-color: transparent;
             // border-color: #FFF;
             border: 1px solid #CCCCCC;
-            border-radius: 17px;
+            border-radius: 1em;
             box-sizing: border-box;
             height: 50px;
             position: relative;
@@ -103,7 +102,8 @@
 
             .search-box {
                 background-color: #FFF;
-                border-color: #FFF !important;
+                border-color: #ccc;
+                border-bottom-color: transparent;
                 border-bottom-left-radius: 0 !important;
                 border-bottom-right-radius: 0 !important;
 
@@ -127,16 +127,18 @@
     }
 }
 .select-dropdownpopup-outer {
-    box-shadow: 1px 2px 5px 0 #ABABAB;
-    border-radius: 18px;
+    box-sizing: border-box;
+    border-radius: 1em;
     position: absolute;
-    margin-left: 10px;
-    top: 90px;
-    width: 230px;
+    margin-left: 0px;
+    margin-top: 50px;
+    top: 0px;
+    width: calc(100%);
     z-index: 1001;
 
     .select-dropdownpopup {
         background-color: #FFF;
+        box-shadow: 1px 2px 5px 0 #ABABAB;
         border: none;
         border-color: transparent;
         border-radius: 18px;
@@ -156,8 +158,11 @@
             li {
                 cursor: pointer;
 
-                &:hover .nav-container__searchOption {
+                &.active .nav-container__searchOption, {
                     background-color: #EEE;
+                }
+                &:hover:not(.active) .nav-container__searchOption {
+                    color: #01C8E5;
                 }
                 .nav-container__searchOption {
                     align-items: center;
@@ -175,5 +180,10 @@
 
     &.showing {
         visibility: visible;
+
+        .select-dropdownpopup {
+            border: 1px solid #ccc;
+            border-top-color: transparent;
+        }
     }
 }
