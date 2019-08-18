@@ -11,6 +11,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         const metaDescription =
           description || data.site.siteMetadata.description
         const metaTitle = `${data.site.siteMetadata.title} - ${title}`
+        const image = data.site.siteMetadata.imageUrl
         return (
           <Helmet
             htmlAttributes={{
@@ -29,7 +30,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: 'og:image',
-                content: data.site.siteMetadata.imageUrl,
+                content: image,
               },
               {
                 property: 'og:description',
@@ -45,7 +46,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: 'twitter:image',
-                content: data.site.siteMetadata.imageUrl,
+                content: image,
               },
               {
                 name: 'twitter:image:alt',
@@ -103,6 +104,7 @@ const detailsQuery = graphql`
         title
         description
         author
+        imageUrl
       }
     }
   }
