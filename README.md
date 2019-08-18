@@ -10,9 +10,9 @@ Presenting at:
 - Smashing Conf NYC
 - A11yTO
 
-Real implementations of the worst, most inaccessible components you can think of. Submissions are welcome! Feel free to open an issue with your idea.
+A talk on some of the worst, most inaccessible components you can think of. Submissions are welcome! Feel free to open an issue with your idea.
 
-This came out of a happy hour discussion with Jesse Beach, Diane Ko, EJ Mason and Marcy Sutton at #CSUNATC19. There could be enough for a memorable conference talk he
+This came out of a happy hour discussion with Jesse Beach, Diane Ko, EJ Mason and Marcy Sutton at #CSUNATC19.
 
 Note: This repo has intentional usability and accessibility problems. Do not mimic!re at some point... ;)
 
