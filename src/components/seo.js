@@ -10,6 +10,7 @@ function SEO({ description, lang, meta, keywords, title }) {
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description
+        const metaTitle = `${data.site.siteMetadata.title} - ${title}`
         return (
           <Helmet
             htmlAttributes={{
@@ -24,7 +25,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: 'og:title',
-                content: title,
+                content: metaTitle,
               },
               {
                 property: 'og:description',
@@ -44,7 +45,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: 'twitter:title',
-                content: title,
+                content: metaTitle,
               },
               {
                 name: 'twitter:description',
