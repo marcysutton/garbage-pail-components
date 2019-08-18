@@ -3,6 +3,7 @@
     border-radius: 1em;
     position: absolute;
     margin-left: 0px;
+    visibility: hidden;
     width: 100%;
     z-index: 1001;
 
@@ -38,9 +39,6 @@
                 }
             }
         }
-    }
-    &.virtualise {
-        visibility: hidden;
     }
 
     &.showing {

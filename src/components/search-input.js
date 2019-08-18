@@ -1,7 +1,15 @@
-import React, {useRef, useEffect, useState} from "react"
+import React, {useState} from "react"
 
 import ItemList from "./item-list"
-import './search-input.scss'
+import "./search-input.scss"
+
+// add logic to make this only run on certain days of the week
+if (process.env.NODE_ENV === 'development') {
+    import("./conditional-no-mouse.scss")
+    .then((data) => {
+        // no-op
+    })
+}
 
 const items = [
     {text: 'Rainier McCheddarton'},
@@ -14,8 +22,8 @@ const items = [
 
 const SearchInput = ({ text = 'Search for a dog friend' }) => {
     const [focused, setFocused] = useState(false)
+    const [inputState, setInputState] = useState('')
     const [dirty, setIsDirty] = useState(false)
-    const [expanded, setExpanded] = useState(true)
 
     const focusHandler = (event) => {
         if (!focused) {
@@ -33,6 +41,7 @@ const SearchInput = ({ text = 'Search for a dog friend' }) => {
         } else if (event.target.value.trim() === '') {
             setIsDirty(false)
         }
+        setInputState(event.target.value)
     }
     const keyHandler = (event) => {
         if (event.key === 'Tab') {
@@ -40,9 +49,9 @@ const SearchInput = ({ text = 'Search for a dog friend' }) => {
             console.log("You'd be a lot cooler by supporting the Tab key");
         }
     }
-    const itemSelectFunc = () => {
-
-    }
+    const filteredItems = items
+        .filter(d => inputState === '' || !d.text.indexOf(inputState))
+    
     return (
         <div className={`nav-container__searchContainer nav-container__searchContainer--isExpanded`}>
             <div className="nav-container__search">
@@ -52,7 +61,8 @@ const SearchInput = ({ text = 'Search for a dog friend' }) => {
                             <div className="icon"></div>
                             <div className="search-wrap">
                                 <span className="s-w-placeholder">{text}</span>
-                                <input name="empName" type="text" className="truncate search" autoComplete="off" onFocus={focusHandler} onBlur={blurHandler} onKeyDown={keyHandler} onChange={changeHandler} />
+                                <input name="empName" type="text" className="truncate search" autoComplete="off"
+                                value={inputState} onFocus={focusHandler} onBlur={blurHandler} onKeyDown={keyHandler} onChange={changeHandler} />
                             </div>
                             <div className={`title ${focused ? 'active': ''}${dirty ? ' show' : ''}`}>
                                 <span>Search for a friend</span>
@@ -62,9 +72,8 @@ const SearchInput = ({ text = 'Search for a dog friend' }) => {
                     </div>
                 </div>
                 <ItemList
-                    items={items}
-                    onSelect={itemSelectFunc}
-                    className={`search-comp nav-menu-dropdown  virtualise ${focused ? 'showing ' : ''}`}
+                    items={filteredItems}
+                    className={`search-comp nav-menu-dropdown ${focused ? 'showing ' : ''}`}
                 />
             </div>
         </div>

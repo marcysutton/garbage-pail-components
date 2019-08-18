@@ -64,7 +64,7 @@ const UserPopover = () => {
     }, [expanded])
     return (
         <div className="popup-wrapper" ref={popoverRef}>
-            <div className="info" id="userPopover" onClick={clickHandler}>
+            <div className="info" id="userPopover" onClick={clickHandler} tabIndex="0">
                 <div className="user-avatar-wrapper" style={{height: '1.25em', width: '1.25em', borderRadius: '50%', backgroundImage: `url('${userImg}')`, backgroundSize: 'contain'}}></div>
             </div>
             <div className="userPopover-dropdown">

@@ -1,10 +1,12 @@
 import highlight from '@mdx-deck/themes/syntax-highlighter-prism'
 
 import Slide from "../templates/slide"
+import FullViewportSlide from "../templates/full-viewport-slide"
 import ImageSlide from "../templates/image-slide"
 import CodeBlock from "../components/code-figure"
-import A11yDiagram from "../components/a11y"
+import A11yDiagram from "../components/a11y-diagram"
 import SearchContainer from "../components/search-input"
+import AvoidTheMouse from "../components/avoid-mouse"
 import UserPopover from "../components/user-popover"
 import KeyboardTrapDemo from "../components/demo1"
 import CarouselDemo from "../components/demo2"
@@ -178,31 +180,35 @@ people with disabilities<br />encounter on a regular basis
 
 ---
 
-<Slide>
+<FullViewportSlide class="conditional-no-mouse">
 
 <h2 class="visually-hidden">Demo</h2>
 
-<div class="search-demo" style="font-size: 0.65em;">
+<div style="font-size: 0.65em;">
   
   <SearchContainer />
 
 </div>
 
-</Slide>
+</FullViewportSlide>
 
 ---
 
-<Slide>
+<FullViewportSlide class="popover-demo">
 
 <h2 class="visually-hidden">Demo 2</h2>
 
-<div class="search-demo" style="font-size: 1em;">
-  
+<div style="font-size: 1em;">
+
+<AvoidTheMouse>
+
   <UserPopover />
+  
+</AvoidTheMouse>
 
 </div>
 
-</Slide>
+</FullViewportSlide>
 
 ---
 
