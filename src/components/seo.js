@@ -28,6 +28,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: metaTitle,
               },
               {
+                name: 'og:image',
+                content: data.site.siteMetadata.imageUrl,
+              },
+              {
                 property: 'og:description',
                 content: metaDescription,
               },
@@ -38,6 +42,14 @@ function SEO({ description, lang, meta, keywords, title }) {
               {
                 name: 'twitter:card',
                 content: 'summary',
+              },
+              {
+                name: 'twitter:image',
+                content: data.site.siteMetadata.imageUrl,
+              },
+              {
+                name: 'twitter:image:alt',
+                content: 'the cutest dumpster fire'
               },
               {
                 name: 'twitter:creator',
