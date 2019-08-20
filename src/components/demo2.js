@@ -16,6 +16,7 @@ const Demo2 = () => (
         query {
             gallery: allFile(
                 filter: { sourceInstanceName: { eq: "gallery" }
+                sort: { order: ASC, fields: relativePath }
             }) {
                 edges {
                     node {
