@@ -4,12 +4,12 @@ import ItemList from "./item-list"
 import "./search-input.scss"
 
 // add logic to make this only run on certain days of the week
-if (process.env.NODE_ENV === 'development') {
+// if (process.env.NODE_ENV === 'development') {
     import("./conditional-no-mouse.scss")
-    .then((data) => {
-        // no-op
-    })
-}
+    // .then((data) => {
+    //     // no-op
+    // })
+// }
 
 const items = [
     {text: 'Rainier McCheddarton'},
