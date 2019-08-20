@@ -3,13 +3,14 @@
     border-radius: 0.5em;
     display: inline-block;
     font-size: 0.5em;
-    color: white;
+    color: #999;
     padding: 0.25em 0.5em;
 }
 .modal-trigger-btn:hover {
     background-color: #333;
 }
 dialog {
+    border: 0;
     position: fixed;
     left: 0;
     right: 0;
@@ -19,6 +20,7 @@ dialog {
     height: 80%;
 }
 .close {
+    color: #999;
     display: inline-block;
     font-size: 0.5em;
     padding: 0.5em;
@@ -27,8 +29,7 @@ dialog {
     top: 0em;
 }
 .close:hover {
-    background-color: black;
-    color: #fff;
+    color: #333;
 }
 .tabs {
     background-color: #f1f1f1;
@@ -40,6 +41,7 @@ dialog {
   .tab {
     background-color: inherit;
     border: none;
+    color: #999;
     cursor: pointer;
     float: left;
     outline: none;
@@ -61,6 +63,7 @@ dialog {
   .tab-panel {
     border: 1px solid #ccc;
     border-top: none;
+    color: #999;
     display: none;
     padding: 6px 12px;
     text-align: left;

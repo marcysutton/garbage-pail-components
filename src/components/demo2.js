@@ -36,7 +36,7 @@ const Demo2 = () => (
             <div style={{height: '1200px', position: 'absolute', width: '100%'}}>
                 <h2>Image Gallery</h2>
                 <Carousel images={data.gallery.edges} altTexts={imageData} />
-                <p>Doggo ipsum stop it fren borking doggo shoober floofs, very jealous pupper thicc. Pats smol borking doggo with a long snoot for pats blop pupper, borking doggo wrinkler. Lotsa pats big ol pupper h*ck heckin angery woofer pupper, blop heckin mlem.</p>
+                <p style={{textAlign: 'left'}}>Garbage, trash, rubbish, or refuse is waste material that is discarded by humans, usually due to a perceived lack of utility. The term generally does not encompass bodily waste products, purely liquid or gaseous wastes, nor toxic waste products. Garbage is commonly sorted and classified into kinds of material suitable for specific kinds of disposal.</p>
             </div>
         )
     }}
