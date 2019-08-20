@@ -15,9 +15,9 @@ const Demo2 = () => (
     <StaticQuery query={graphql`
         query {
             gallery: allFile(
-                filter: { sourceInstanceName: { eq: "gallery" }
+                filter: { sourceInstanceName: { eq: "gallery" }}
                 sort: { order: ASC, fields: relativePath }
-            }) {
+            ) {
                 edges {
                     node {
                         name

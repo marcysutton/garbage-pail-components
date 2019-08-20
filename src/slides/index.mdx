@@ -10,14 +10,12 @@ import AvoidTheMouse from "../components/avoid-mouse"
 import UserPopover from "../components/user-popover"
 import KeyboardTrapDemo from "../components/demo1"
 import CarouselDemo from "../components/demo2"
+import DialogTabceptionDemo from "../components/dialog-tabception"
 
 import baseTheme from '../theme'
 export const themes = [baseTheme, highlight]
 const openModal = () => {
     document.querySelector('.modal-curtain').removeAttribute('hidden')
-}
-const buttonAction = () => {
-    alert('Button clicked')
 }
 
 <Slide>
@@ -54,20 +52,6 @@ Head of Learning, Gatsby
 
 <Slide>
 
-<div style="transform: scale(0.65, 0.65)">
-
-![Gatsby logo](./gatsby-icon.png)
-
-</div>
-
-Gatsby is a framework for building websites & component libraries with React.js
-
-</Slide>
-
----
-
-<Slide>
-
 # Accessibility
 
 Making the web more inclusive <br />
@@ -91,6 +75,29 @@ http://bit.ly/microsoft-inclusive-toolkit
 
 <Slide>
 
+<div style="transform: scale(0.65, 0.65)">
+
+![Gatsby logo](./gatsby-icon.png)
+
+</div>
+
+Gatsby is a framework for building websites & component libraries with React.js
+
+</Slide>
+
+---
+
+<Slide>
+
+# The WebAIM Million
+https://webaim.org/projects/million/
+
+</Slide>
+
+---
+
+<Slide>
+
 # For people with disabilities out there: **how does it make you feel when a website isn’t accessible**?
 
 </Slide>
@@ -107,7 +114,7 @@ http://bit.ly/microsoft-inclusive-toolkit
 
 <Slide>
 
-> # _“I just get **frustrated**, but then I just kind of force myself to move on. I think the thing that bothers me the most is when **sites have really small font or bad color contrast**.”_
+> # _“I get **frustrated**, but then I kind of force myself to move on. The thing that bothers me most is when **sites have really small font or bad color contrast**.”_
 
 </Slide>
 
@@ -141,6 +148,16 @@ http://bit.ly/microsoft-inclusive-toolkit
 <Slide>
 
 > # _“I feel **excluded**. **Invisible**.”_
+
+</Slide>
+
+---
+
+<Slide>
+
+# Acknowledge the pain 
+
+people with disabilities<br />encounter on a regular basis
 
 </Slide>
 
@@ -186,33 +203,9 @@ Components bake in our assumptions about design and development, often embedding
 
 ---
 
-<Slide>
-
-# Acknowledge the pain 
-
-people with disabilities<br />encounter on a regular basis
-
-</Slide>
-
----
-
-<FullViewportSlide class="conditional-no-mouse">
-
-<h2 class="visually-hidden">Demo</h2>
-
-<div style="font-size: 0.65em;">
-  
-  <SearchContainer />
-
-</div>
-
-</FullViewportSlide>
-
----
-
 <FullViewportSlide class="popover-demo">
 
-<h2 class="visually-hidden">Demo 2</h2>
+<h2 class="visually-hidden">Demo: a dropdown that avoids the mouse</h2>
 
 <div style="font-size: 1em;">
 
@@ -228,6 +221,31 @@ people with disabilities<br />encounter on a regular basis
 
 ---
 
+<FullViewportSlide class="conditional-no-mouse">
+
+<h2 class="visually-hidden">Demo: tabs in a modal</h2>
+
+<DialogTabceptionDemo />
+
+</FullViewportSlide>
+
+---
+
+<Slide>
+
+<div>
+    <button class="demo-button" onClick={openModal}>Open curtain</button>
+    <div style="display: inline-block; margin-left: 1em;">
+        <a href="#">Link</a>
+    </div>
+</div>
+
+<div class="modal-curtain" hidden></div>
+
+</Slide>
+
+---
+
 <Slide>
 
 <h1 class="visually-hidden">Trapping Tam</h1>
@@ -235,6 +253,20 @@ people with disabilities<br />encounter on a regular basis
 ![A kid stuck in glue with objects](./trapping-tam.jpg)
 
 </Slide>
+
+---
+
+<FullViewportSlide class="conditional-no-mouse">
+
+<h2 class="visually-hidden">Demo: keyboard trapping search field</h2>
+
+<div style="font-size: 0.65em;">
+  
+  <SearchContainer />
+
+</div>
+
+</FullViewportSlide>
 
 ---
 

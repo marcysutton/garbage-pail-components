@@ -1,0 +1,70 @@
+.modal-trigger-btn {
+    background-color: black;
+    border-radius: 0.5em;
+    display: inline-block;
+    font-size: 0.5em;
+    color: white;
+    padding: 0.25em 0.5em;
+}
+.modal-trigger-btn:hover {
+    background-color: #333;
+}
+dialog {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    height: 80%;
+}
+.close {
+    display: inline-block;
+    font-size: 0.5em;
+    padding: 0.5em;
+    position: absolute;
+    right: 0em;
+    top: 0em;
+}
+.close:hover {
+    background-color: black;
+    color: #fff;
+}
+.tabs {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+  
+  /* Style the tabs that are used to open the tab content */
+  .tab {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    float: left;
+    outline: none;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tab-panel {
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+    padding: 6px 12px;
+    text-align: left;
+  }
+  .tab-panel.active {
+    display: block;
+  }
