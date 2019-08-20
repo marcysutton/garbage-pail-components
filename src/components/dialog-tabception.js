@@ -33,6 +33,7 @@ const DialogTabceptionDemo = () => {
                     <div className={`tab-panel ${activeTab === '3' ? 'active' : ''}`}>Shovels at rakes plows. Bulls at rose garden cucumbers mice sunflower wheat in pig. Turkey daisys eggs squeal, horses moonshin.</div>
                 </div>
             </dialog>
+            <div className="curtain"></div>
         </>
     )
 }
