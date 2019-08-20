@@ -16,10 +16,8 @@ const Demo2 = () => (
     query={graphql`
       query {
         gallery: allFile(
-          filter: {
-            sourceInstanceName: { eq: "gallery" }
-            sort: { order: ASC, fields: relativePath }
-          }
+          filter: { sourceInstanceName: { eq: "gallery" } }
+          sort: { order: ASC, fields: relativePath }
         ) {
           edges {
             node {
