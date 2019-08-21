@@ -6,7 +6,7 @@ module.exports = {
     description:
       `Let's turn up the "bad accessibility" dial up to 11 in order to feel the pain that users with disabilities experience on a regular basis.`,
     author: `@marcysutton`,
-    imageUrl: `dumpster-fire-icon.png`
+    imageUrl: `dumpster-fire.png`
   },
   pathPrefix: "/garbage-pail-components",
   plugins: [
