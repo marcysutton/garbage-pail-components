@@ -7,6 +7,7 @@ Workshop slides: https://marcysutton.github.io/garbage-pail-components/
 Presenting at:
 
 - Clarity Conf
+- Gatsby Days
 - Smashing Conf NYC
 - A11yTO
 
