@@ -180,3 +180,16 @@ textarea {
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+.githubIcon {
+  background-image: url(./icons/github.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  height: 1em;
+  line-height: 0.75;
+  margin-top: 0.2em;
+  vertical-align: top;
+  width: 1em;
+}
