@@ -13,8 +13,6 @@ Presenting at:
 
 This is a talk about some of the most frustrating components an accessibility specialist can think of (based on real life experiences). This originally came out of a happy hour discussion with Jesse Beach, Diane Ko, EJ Mason and Marcy Sutton at #CSUNATC19.
 
-Note: This repo has intentional usability and accessibility problems. Do not copy!
-
 Prior art: https://github.com/feross/TheAnnoyingSite.com
 
 ---
