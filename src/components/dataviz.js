@@ -2,6 +2,8 @@ import React, {useEffect, useRef} from 'react'
 import * as d3 from "d3"
 import DataVizCommon from "./dataviz-common"
 
+// source: https://bocoup.com/blog/smoothly-animate-thousands-of-points-with-html5-canvas-and-d3
+
 function DataViz () {
     let timer = null
 
