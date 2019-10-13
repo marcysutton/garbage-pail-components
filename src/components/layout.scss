@@ -193,3 +193,19 @@ textarea {
   vertical-align: top;
   width: 1em;
 }
+.play-control {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #f4f4f4;
+  cursor: pointer;
+  font-size: 100px;
+  font-family: 'helvetica neue', calibri, sans-serif;
+  font-weight: 100;
+  height: 600px;
+  left: 0px;
+  line-height: 600px;
+  position: absolute;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.7) 3px 3px 0px;
+  top: 0px;
+  width: 600px;
+}
