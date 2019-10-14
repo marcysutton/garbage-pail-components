@@ -1,7 +1,6 @@
 import * as d3 from 'd3'
 
 function phyllotaxisLayout(points, pointWidth, xOffset, yOffset, iOffset) {
-    console.log('phyllotaxisLayout', typeof points)
     if (xOffset===void 0) xOffset = 0;
     if (yOffset===void 0) yOffset = 0;
     if (iOffset===void 0) iOffset = 0;
@@ -17,7 +16,6 @@ function phyllotaxisLayout(points, pointWidth, xOffset, yOffset, iOffset) {
     return points
 }
 function gridLayout(points, pointWidth, gridWidth) {
-    console.log('gridLayout', typeof points)
     var pointHeight = pointWidth;
     var pointsPerRow = Math.floor(gridWidth / pointWidth);
     // var numRows=points.length / pointsPerRow;
@@ -28,7 +26,6 @@ function gridLayout(points, pointWidth, gridWidth) {
     return points
 }
 function randomLayout(points, pointWidth, width, height) {
-    console.log('randomLayout', typeof points)
     points.forEach(function(point, i) {
         point.x = Math.random() * (width - pointWidth);
         point.y = Math.random() * (height - pointWidth)
@@ -36,7 +33,6 @@ function randomLayout(points, pointWidth, width, height) {
     return points
 }
 function sineLayout(points, pointWidth, width, height){
-    console.log('sineLayout', typeof points)
     var amplitude = .3 * (height / 2);
     var yOffset = height / 2;
     var periods = 3;
@@ -52,8 +48,6 @@ function sineLayout(points, pointWidth, width, height){
     return points
 }
 function spiralLayout(points, pointWidth, width, height) {
-    console.log('spiralLayout', typeof points)
-    // var amplitude=.3*(height/2);
     var xOffset = width / 2;
     var yOffset = height / 2;
     var periods = 20;
