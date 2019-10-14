@@ -77,7 +77,11 @@ function DataViz () {
                     p.y = p.sy * (1 - i) + p.ty * i
                 })
                 draw()
-                (1 === i && (timer.stop(), currLayout = (currLayout + 1) % layouts.length, animate(layouts[currLayout])))
+                if (1 === i) {
+                    timer.stop()
+                    currLayout = (currLayout + 1) % layouts.length
+                    animate(layouts[currLayout])
+                }
             }
         )
     }
@@ -108,7 +112,7 @@ function DataViz () {
                 d3.select(this).style("display","none")
             })
         console.log('useEffect')
-    })
+    }, [])
     return (
         <>
             <div id="dataviz" ref={canvasRef}></div>
