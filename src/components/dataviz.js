@@ -126,7 +126,7 @@ function DataViz () {
     return (
         <>
             <div id="dataviz" ref={canvasRef}></div>
-            <div className="visually-hidden" aria-live="status" ref={liveRegionRef}>
+            <div className="visually-hidden" aria-live="alert" ref={liveRegionRef}>
                 {announcement}
             </div>
         </>
