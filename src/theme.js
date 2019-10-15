@@ -80,7 +80,7 @@ export default {
       fontSize: "1.2rem"
     },
     li: {
-      marginBottom: "0.5rem",
+      marginBottom: "0.75rem",
       textAlign: 'left'
     },
     img: {

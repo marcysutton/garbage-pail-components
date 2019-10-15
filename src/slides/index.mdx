@@ -45,7 +45,7 @@ Head of Learning, Gatsby
 Making the web more inclusive <br />
 **_with_** _and_ **_for_ people with disabilities**
 
-http://bit.ly/microsoft-inclusive-toolkit
+https://www.w3.org/WAI/
 
 </Slide>
 
@@ -57,7 +57,9 @@ http://bit.ly/microsoft-inclusive-toolkit
 
 <span style="display: block; margin: 1em 0; transform: scale(2, 2);" role="img" title="Thinking face">🤔</span>
 
-<a href="https://frontendmasters.com/workshops/javascript-accessibility/">https://frontendmasters.com/workshops/<br />javascript-accessibility</a>
+<a href="https://shop.smashingmagazine.com/products/smashing-book-6-new-frontiers-in-web-design">
+https://shop.smashingmagazine.com/products/<br />smashing-book-6-new-frontiers-in-web-design
+</a>
 
 </Slide>
 
@@ -82,9 +84,10 @@ Gatsby is a framework for building websites & component libraries with React.js
 <p>
   <span class="githubIcon"></span>&nbsp;
   <strong><a href="https://github.com/marcysutton/garbage-pail-components">
-    http://github.com/marcysutton/garbage-pail-components
+    https://github.com/marcysutton/<br />garbage-pail-components
   </a></strong>
-  <br />Gatsby,&nbsp;  
+</p>
+<p>Gatsby,&nbsp;  
   <a href="https://github.com/jxnblk/mdx-deck/tree/master/packages/gatsby-theme">MDX-Deck</a> theme
 </p>
 
@@ -180,7 +183,7 @@ people with disabilities<br />encounter on a regular basis
  
 <Slide>
 
-<h1 class="visually-hidden">Types of disabilities</h1>
+<h1 style="margin-bottom: 0.5em;">Disability</h1>
 
 <A11yDiagram />
 
@@ -203,6 +206,14 @@ people with disabilities<br />encounter on a regular basis
 # UI Components (revisited)
 
 Components bake in our assumptions about design and development, often embedding barriers to access from a systemic level
+
+</Slide>
+
+---
+
+<Slide>
+
+<img src="./garbage-can.jpg" alt="garbage can" style="height: 80vh" />
 
 </Slide>
 
@@ -236,6 +247,21 @@ Components bake in our assumptions about design and development, often embedding
 
 ---
 
+<Slide>
+
+<div>
+    <button class="demo-button" onClick={openModal}>Open curtain</button>
+    <div style="display: inline-block; margin-left: 1em;">
+        <a href="#">Link</a>
+    </div>
+</div>
+
+<div class="modal-curtain" hidden></div>
+
+</Slide>
+
+---
+
 <FullViewportSlide class="conditional-no-mouse">
 
 <h2 class="visually-hidden">Demo: tabs in a modal</h2>
@@ -248,14 +274,29 @@ Components bake in our assumptions about design and development, often embedding
 
 <Slide>
 
-<div>
-    <button class="demo-button" onClick={openModal}>Open curtain</button>
-    <div style="display: inline-block; margin-left: 1em;">
-        <a href="#">Link</a>
-    </div>
-</div>
+<img src="/no-mouse.png" alt="a crossed-out mouse target" style="margin-top:-2em; max-width:30vh" />
 
-<div class="modal-curtain" hidden></div>
+<CodeBlock>
+
+```sh
+npm install no-mouse-days
+```
+
+</CodeBlock>
+
+</Slide>
+
+---
+
+<Slide>
+
+# Modal Dialogs
+
+They can be done accessibly...but some native HTML tools would help
+
+- https://bugzilla.mozilla.org/show_bug.cgi?id=840640
+- https://github.com/WICG/inert
+- https://developer.paciellogroup.com/blog/2018/06/the-current-state-of-modal-dialog-accessibility/
 
 </Slide>
 
@@ -295,6 +336,36 @@ Components bake in our assumptions about design and development, often embedding
 
 <Slide>
 
+# Keyboard Trapping
+
+<div style="min-width: 70vw;">
+<div style="display: inline-block; width: 50%;">
+
+<h2>✅ YES</h2>
+
+- modal dialogs
+- calendar&nbsp;widgets
+- games (maybe)
+
+</div>
+
+<div style="display: inline-block; width: 50%; vertical-align:top;">
+
+<h2>🚫 NO</h2>
+
+- text inputs
+- comboboxes
+- rich textareas
+
+</div>
+</div>
+
+</Slide>
+
+---
+
+<Slide>
+
 <h1 class="visually-hidden">Carousel Cameron</h1>
 
 ![A plump kid riding an impaled carousel horse](./carousel-cameron.jpg)
@@ -310,6 +381,22 @@ Components bake in our assumptions about design and development, often embedding
 <CarouselDemo />
 
 </div>
+
+</Slide>
+
+---
+
+<Slide>
+
+http://shouldiuseacarousel.com/
+
+</Slide>
+
+---
+
+<Slide>
+
+https://www.w3.org/WAI/tutorials/carousels/
 
 </Slide>
 
@@ -347,9 +434,9 @@ Components bake in our assumptions about design and development, often embedding
 
 <Slide>
 
-![Canvas Best Practices](./canvas-best-practices.png)
-
-<p class="visually-hidden">https://html.spec.whatwg.org/multipage/canvas.html#best-practices</p>
+<a href="https://html.spec.whatwg.org/multipage/canvas.html#best-practices" title="WHATWG: Canvas best practices">
+  <img src="./canvas-best-practices.png" alt="Canvas Best Practices" />
+</a>
 
 </Slide>
 
@@ -384,6 +471,20 @@ Components bake in our assumptions about design and development, often embedding
 Source: Bocoup
 </a>
 </p>
+
+</Slide>
+
+---
+
+<Slide>
+
+# Dataviz/Infographics
+## Time to get creative
+
+- There might be a simpler solution than 1:1 UX
+- Use meaningful text alternatives
+- Visually hidden tables
+- Accessible toggles between data formats
 
 </Slide>
 
