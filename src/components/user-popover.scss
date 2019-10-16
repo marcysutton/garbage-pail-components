@@ -1,4 +1,16 @@
 
+.popover-demo-wrap {
+  min-height: 100px;
+  min-width: 100px;
+  position: relative;
+  overflow: visible;
+
+  .popup-wrapper {
+    position: relative;
+    min-height: 100px;
+    min-width: 100px;
+  }
+}
 .popup-wrapper {
   display: inline-block;
   font-family: Helvetica, sans-serif;

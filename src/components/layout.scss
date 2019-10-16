@@ -133,14 +133,18 @@ textarea {
     width: 100%;
 
     figure {
+      display: block;
       margin: 0;
 
       svg {
+        display: inline-block;
         max-height: 200px;
         max-width: 200px;
         width: 100%;
       }
       figcaption {
+        overflow-wrap: normal;
+        overflow: visible;
         margin: 0 1em;
       }
     }
@@ -152,6 +156,14 @@ textarea {
     margin-top: 2em;
     position: absolute;
     width: 100%;
+  }
+}
+.image-text-layout {
+  display: flex;
+  align-items: center;
+
+  .image {
+    margin-right: 1em;
   }
 }
 .skip-link {
@@ -208,4 +220,58 @@ textarea {
   text-shadow: rgba(0, 0, 0, 0.7) 3px 3px 0px;
   top: 0px;
   width: 600px;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 14px;
+  }
+
+  * {
+    overflow: scroll;
+    overflow-wrap: break-word;
+  }
+  .slide-title {
+    transform: scale(1);
+  }
+  .a11yDiagram {
+    p {
+      display: none;
+    }
+  }
+  .search-top-container .search-container .search-box {
+    font-size: 14px;
+    .icon {
+      padding: 0;
+    }
+    .search-wrap {
+      padding: 0;
+      width: auto;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
+  .a11yDiagram {
+    & > div {
+      display: block;
+    }
+    p {
+      display: none;
+    }
+  }
+  .image-text-layout {
+    display: block;
+
+    .image {
+      margin-right: 0;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 9px;
+  }
 }

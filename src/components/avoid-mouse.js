@@ -37,6 +37,7 @@ export default ({children}) => {
                 style={{
                     position: 'absolute',
                     transition: 'all 0.25s easeInOut',
+                    transformOrigin: 'left top',
                     transform: 'scale(1.5, 1.5)',
                     ...styleState
                 }}>
