@@ -19,7 +19,7 @@ const DialogTabceptionDemo = () => {
     }
     return (
         <>
-            <div className="modal-trigger-btn" onClick={openDialog}>Open modal</div>
+            <button className="modal-trigger-btn" onClick={openDialog}>Open modal</button>
             <dialog ref={dialogRef}>
                 <div className="close" onClick={closeDialog}>X</div>
                 <div className="tab-switcher">
