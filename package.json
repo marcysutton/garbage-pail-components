@@ -24,7 +24,7 @@
     "gatsby-theme-mdx-deck": "^3.0.13",
     "gatsby-transformer-sharp": "^2.2.21",
     "match-sorter": "^4.0.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-d3-library": "^1.1.8",
