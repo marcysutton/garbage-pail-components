@@ -11,7 +11,7 @@
     "d3": "^5.12.0",
     "emotion": "^10.0.17",
     "extract-text-webpack-plugin": "^3.0.2",
-    "gatsby": "^2.15.36",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.2.27",
     "gatsby-plugin-manifest": "^2.2.21",
     "gatsby-plugin-mdx": "^1.0.51",
